@@ -1,0 +1,27 @@
+{
+  "name": "deshdarshan-mern-app",
+  "version": "1.0.0",
+  "description": "DeshDarshan Travel Platform - MERN Stack with AI Assistant",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "backend:install": "cd backend && npm install",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:install": "cd frontend && npm install",
+    "install:all": "npm run backend:install && npm run frontend:install",
+    "start": "npm run backend:start",
+    "build": "npm run frontend:build"
+  },
+  "keywords": ["travel", "ai", "assistant", "react", "express", "mongodb", "mern"],
+  "author": "DeshDarshan Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
