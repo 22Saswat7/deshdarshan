@@ -390,7 +390,7 @@ FRONTEND_URL=https://your-frontend-url.vercel.app
 NODE_ENV=production
 ```
 
-📖 **Detailed Guide**: See [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md)
+📖 **Detailed Guide**: See [docs/VERCEL_DEPLOYMENT_GUIDE.md](./docs/VERCEL_DEPLOYMENT_GUIDE.md)
 
 ## 🤝 Contributing
 
