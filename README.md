@@ -1,13 +1,22 @@
-# DeshDarshan - Modern Travel Platform
+# 🇮🇳 DeshDarshan - Modern Travel Platform for India
+
+![DeshDarshan](https://img.shields.io/badge/DeshDarshan-Travel%20Platform-blue)
+![React](https://img.shields.io/badge/React-18.3.1-blue)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green)
+![Firebase](https://img.shields.io/badge/Firebase-Auth-orange)
+![Razorpay](https://img.shields.io/badge/Razorpay-Payments-purple)
 
 ## 🚀 Project Overview
 
-DeshDarshan is a comprehensive travel platform built with React and Node.js, featuring:
+**Live Demo**: [Deploy on Vercel](https://vercel.com) 🚀
+
+DeshDarshan is a comprehensive full-stack travel platform built with React and Node.js, featuring:
 - 🤖 AI-powered travel assistant using Google's Gemini API
-- 💳 Integrated Razorpay payment system
+- 💳 Integrated Razorpay payment system with real transactions
 - 🔐 Firebase authentication with Google Sign-in
 - 🌍 Regional destination exploration across India
 - 💰 Dynamic pricing system with real-time calculations
+- 📱 Responsive design for all devices
 
 ## ✨ Features
 
@@ -339,6 +348,49 @@ npm run frontend:build
 - [ ] Advanced AI features (voice, images)
 - [ ] Real-time notifications
 - [ ] Travel booking integration
+
+## 🚀 Deployment
+
+### Quick Deploy to Vercel
+
+#### Frontend Deployment
+1. **Import Repository**: Go to [vercel.com](https://vercel.com) and import `22Saswat7/deshdarshan`
+2. **Set Root Directory**: `frontend`
+3. **Framework Preset**: Vite
+4. **Environment Variables**: Add all `VITE_*` variables
+5. **Deploy**: Click deploy
+
+#### Backend Deployment
+1. **Create New Project**: Import same repository
+2. **Set Root Directory**: `backend`
+3. **Framework Preset**: Other
+4. **Environment Variables**: Add `RAZORPAY_*` and `GEMINI_API_KEY`
+5. **Deploy**: Click deploy
+
+### Environment Variables
+
+**Frontend (.env):**
+```env
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
+VITE_API_BASE_URL=https://your-backend-url.vercel.app
+```
+
+**Backend (.env):**
+```env
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+GEMINI_API_KEY=your_gemini_api_key
+FRONTEND_URL=https://your-frontend-url.vercel.app
+NODE_ENV=production
+```
+
+📖 **Detailed Guide**: See [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md)
 
 ## 🤝 Contributing
 
